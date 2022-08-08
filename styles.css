@@ -84,9 +84,10 @@ header > div {
 }
 
 header div div {
-    padding-top: 40px;
+    /* padding-top: 40px; */
     /* width: 60%; */
     text-align: center;
+    margin: 0 auto;
 }
 
 header img {
@@ -205,6 +206,9 @@ section {
     #work > div {
         grid-template-columns: 1fr 1fr;
     }
+    header > div {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -213,5 +217,12 @@ section {
     }
     #contact > div {
         flex-direction: row;
+    }
+    header div div {
+        padding-top: 40px;
+        width: 60%;
+    }
+    header img {
+        width: 40%;
     }
 }
